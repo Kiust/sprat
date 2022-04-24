@@ -8,10 +8,20 @@
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 }
 
+body {
+    background-color: #444;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 
@@ -22,18 +32,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-color: var(--dark);
-  padding: 16px 32px;
-  border-bottom: 3px solid var(--primary);
 }
 
 .logo {
@@ -50,75 +48,38 @@ nav {
   cursor: pointer;
 }
 
+nav {
+  background-color: var(--dark);
+  padding: 16px 32px;
+  border-bottom: 2px solid var(--primary);
+}
+/* --------------------------------- SUPER BUTTON */
+.super_btn {
+display: flex;
+flex-direction: column;
+}
 
-.hamburger {
-  display: block;
+.super_btn a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+ /* --------------------------------- SUPER-BTN DISPLAY NONE */
+
+.super_btn a {
+  display: none;
+}
+
+.super_btn input {
   position: relative;
-  z-index: 1;
-
-  user-select: none;
-
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
+  width: 80px;
+  bottom: -5vh;
 }
-
-.hamburger__links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-
-  text-align: end;
-  background: var(--color-footer);
-  padding: 2rem;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  margin-top: 1rem;
-  min-width: 210px;
-  border-radius: 5px;
-  box-shadow: 0 0 5 rgba(0,0,0,0.2);
-}
-.hamburger__links p {
-  margin: 1rem 0;
-}
-
-
-@media screen and (max-width: 1050px) {
-  .lubi3__navbar-links_container {
-      display: none;
-  }
-  
-  .lubi3__navbar-menu {
-      display: flex;
-
-.hamburger__links:hover {
- 
-  background-color: var(--primary);
-}
-
-.hamburger_links span:nth-child(1) {
-  transform: translate(0px, -2px) rotate(45deg);
-}
-
-.hamburger_links span:nth-child(2) {
-  opacity: 0;
-  transform: translateX(-15px);
-}
-
-.hamburger_links span:nth-child(3) {
-  transform: translate(-3px, 3px) rotate(-45deg);
-}
- 
 
 .menu {
-  display: none;
-  flex: 1 1 0%;
   justify-content: flex-end;
-  margin: 0 -16px;
 }
 
 .menu a {
@@ -130,71 +91,54 @@ nav {
   padding: 8px 16px;
   border-radius: 99px;
 }
-
-
-.menu a.is-active,
-.menu a:hover {
-  background-color: var(--primary);
+ /* --------------------------------- HIRO SECTION */
+.hero {
+  height: 40vh;
+  /* background-image: url(assets/bg-trefle.jpg); */
 }
 
-@media (min-width: 700px) {
-  .hamburger {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    
-  }
+.hero-text {
+ text-align: center;
+ padding-top: 10%;
+ 
 }
-  
 
-
-body {
-    background-color: rgba(245, 239, 229, 0.835);
-    background-image: url(./assets/bg-trefle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 h1 {
-    position: relative;
-    padding-top: 140px;
-    padding-left: 3rem;
-
-    font-family: Poppins;
-
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    font-size: 2.7rem;
-    background-color: #ff8177;
+    font-size: 2rem;
 
     background-image: linear-gradient(325deg, #ba42f9 15%, #22d7cfe0 75%);
-    background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    
 }
 
-@media (max-width: 558px) {
-    h1 {
-        font-size: 2rem;
-        padding-left: 1.5rem;
-    }
+h2 {
+  background: var(--gradient-text);
+  background-clip: text;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.bg__footer {
-    background: url(./assets/onde-rosellabotton.svg);
-    opacity: 1;
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    background-repeat: no-repeat;
+main {
+  display: flex;
+}
 
-    
-    
-    
-    
+/* aside {
+  display: flex;
+  width: 30%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+} */
+
+
+
+.img-article {
+  
+  border-radius: 5%;
+  width: 30%;
+  
 }

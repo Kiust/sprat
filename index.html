@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Navbar</title>
 
-    <link rel="stylesheet" href="./styles.css" />
-    
-  </head>
-  <body>
-    <nav>
-      <div class="container">
-        <a href="./index.html" class="logo">Sprat</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Navbar</title>
 
-        <div class="menu">
-          <a href="#" class="is-active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </div>
+  <link rel="stylesheet" href="./styles.css" />
 
-        
-        <!-- menu hamburger menu -->
-        <div className="hamburger__links">
-          <p><a href="#home">Home !</a>
-            <p><a href="#About">About !</a></p>
-            <p><a href="#Projects">Projects !</a></p>
-            <p><a href="#Contact">Contact !</a></p>
-          </div>
-        </nav>
+</head>
 
-      <h1>Elovolution is Coming</h1>
-      <h2>Get in erlier</h2>
+<body>
+  <nav>
+    <div class="container">
+    <a href="./index.html" class="logo">Sprat</a>
 
-      <footer>
-        <div class="bg__footer">
-          <p>© 2018 Garofle</p>
-        </div>
-      </footer>
-      <script src="./main.js"></script>
-  </body>
+    <!-- the super btn is a hamburger menu center position -->
+    <div class="super_btn">
+      <input type="image" src="assets/super-btn.svg" alt="face menu" />      
+      <!-- <a href="#">News</a>
+      <a href="#">Tutorial</a>
+      <a href="#">Contact</a> -->
+    </div>
+
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="article.html">Article</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+  </nav>
+  <section class="hero">
+    <div class="hero-text">
+    <h1>Decentralized and distribuited website are the key of web 3.0</h1>
+    <p>appostu semu</p>
+  </div>
+  </section>
+<main>
+  <article>
+    <img class="img-article" src="assets/planet-key.png" alt="key on the planet">
+  <h2>Decentralized and distribuited website are the key of web 3.0</h2>
+  <h3>here are the most important differences between centralized, decentralized and distributed networks </h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis voluptatum nisi itaque officia soluta earum nulla, temporibus praesentium quam repudiandae aperiam fuga eos amet velit. Alias aut ipsam deserunt eveniet. Sunt, veniam blanditiis. Id nihil quis sit veniam ut culpa, tenetur necessitatibus fugit temporibus saepe modi optio, libero architecto aut iusto magni nisi molestias. Rem suscipit facere accusantium possimus, amet nesciunt eligendi ex, quasi beatae velit placeat error sint, tempore sapiente eos provident voluptatem iste cumque? Ut modi totam quis voluptatum quam. Impedit possimus optio laudantium eum expedita nobis est laboriosam rerum iusto veniam dolores, ipsam aliquid similique deleniti aspernatur, natus velit sunt quod? Sit alias ea aliquam, eaque ab tenetur nisi, quam perspiciatis animi laudantium dicta sapiente quia recusandae.</p>
+</article>
+  
+</main>
+  <footer>
+    <p>Rosano Luca© 2022 NFT as Key</p>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>
