@@ -1,7 +1,7 @@
-// const hamburger = document.querySelector('.hamburger');
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("superBtn").onclick = function() {myFunction()};
 
-// hamburger.addEventListener('click', function (){
-//     this.classList.toggle('is-active');
-// });
-
-// FACE EMOJI SWICH ON CLICK
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("dropDown").classList.toggle("show");
+}

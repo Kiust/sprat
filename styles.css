@@ -56,34 +56,11 @@ img {
   cursor: pointer;
 }
 
+/* --------------------------------- NAVBAR */
 nav {
   background-color: var(--dark);
   padding: 16px 32px;
   border-bottom: 2px solid var(--primary);
-}
-
-/* --------------------------------- SUPER BUTTON */
-.super_btn {
-  display: flex;
-}
-
-.super_btn a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Poppins";
-  text-align: center;
-}
-
-/* --------------------------------- SUPER-BTN DISPLAY NONE */
-
-.super_btn a {
-  display: none;
-}
-
-.super_btn input {
-  position: relative;
-  width: 80px;
-  bottom: -5vh;
 }
 
 .menu {
@@ -99,6 +76,57 @@ nav {
   padding: 8px 16px;
   border-radius: 99px;
 }
+/* --------------------------------- SUPER BUTTON */
+.dropdown {
+  display: flex;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: -23.4vh;
+  right: 0;
+  background-color: rgba(46, 43, 43, 0.963);
+  min-width: 200px;
+  overflow: auto;
+  border-radius: 5%;
+}
+
+.dropdown-content a {
+  color: wheat;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(96, 89, 89, 0.963);
+
+}
+
+.show {display:block;}
+
+
+
+#superBtn {
+  position: relative;
+  width: 80px;
+  bottom: -5vh;
+}
+
 
 /* --------------------------------- HIRO SECTION */
 .hero {
