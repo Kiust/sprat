@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700;800&family=Nunito+Sans:wght@300;400&display=swap');
 
 
 :root {
@@ -6,10 +8,12 @@
   --light: #eeeeee;
   --dark: #212121;
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --h2-font-family: "Merriweather", "Arial", sans-serif;
+  --p-article-fonts: "Nunito", sans-serif;
 }
 
 body {
-    background-color: #444;
+  background-color: #444;
 }
 
 * {
@@ -24,8 +28,12 @@ img {
   margin: auto;
 }
 
-
 .container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.nav_head {
   max-width: 1280;
   margin: 0 auto;
 
@@ -39,7 +47,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   
+
   margin-right: 10px;
   font-size: 40px;
   font-weight: 900;
@@ -53,10 +61,10 @@ nav {
   padding: 16px 32px;
   border-bottom: 2px solid var(--primary);
 }
+
 /* --------------------------------- SUPER BUTTON */
 .super_btn {
-display: flex;
-flex-direction: column;
+  display: flex;
 }
 
 .super_btn a {
@@ -66,7 +74,7 @@ flex-direction: column;
   text-align: center;
 }
 
- /* --------------------------------- SUPER-BTN DISPLAY NONE */
+/* --------------------------------- SUPER-BTN DISPLAY NONE */
 
 .super_btn a {
   display: none;
@@ -83,7 +91,7 @@ flex-direction: column;
 }
 
 .menu a {
-  color: #fff;
+  color: #FCFAF6;
   margin: 0 16px;
   font-weight: 600;
   text-decoration: none;
@@ -91,27 +99,27 @@ flex-direction: column;
   padding: 8px 16px;
   border-radius: 99px;
 }
- /* --------------------------------- HIRO SECTION */
+
+/* --------------------------------- HIRO SECTION */
 .hero {
-  height: 40vh;
+  height: 30vh;
   /* background-image: url(assets/bg-trefle.jpg); */
 }
 
 .hero-text {
- text-align: center;
- padding-top: 10%;
- 
+  text-align: center;
+  padding-top: 9vh;
+
 }
 
 
 h1 {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
 
-    background-image: linear-gradient(325deg, #ba42f9 15%, #22d7cfe0 75%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(325deg, #ba42f9 15%, #22d7cfe0 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -122,23 +130,89 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-main {
-  display: flex;
+p {
+  font-family: var(--p-article-fonts);
+  font-size: 1.3rem;
+  color: #FCFAF6;
+  word-spacing: 0.4rem;
+  padding: 1rem;
 }
 
-/* aside {
+/* --------------------------------- HOME ARTICLE */
+
+.home-article {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-article,
+.text {
+  padding: 1.5rem;
+}
+
+.home-article figure {
   display: flex;
   width: 30%;
-  padding-left: .5rem;
-  margin-left: .5rem;
-  float: right;
-} */
+}
+
+.text {
+  width: 70%;
+}
+
+.home-article img {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 0%;
+  max-width: 360px;
+  min-width: 250px;
+  padding: 20px;
+}
+
+/* --------------------------------- Footer */
 
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
 
-.img-article {
-  
-  border-radius: 5%;
-  width: 30%;
-  
+main {
+  padding-bottom: 2.5rem;
+  /* Footer margon top */
+}
+
+.socials {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.4rem;
+  background-color: rgba(64, 60, 60, 0.574);
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials i {
+  color: wheat;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-article {
+    flex-direction: column
+  }
+
+  .image,
+  .text {
+    width: 100%;
+  }
 }
