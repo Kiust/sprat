@@ -1,0 +1,10 @@
+
+.single__header-image {
+    display: flex;
+    height: 50px;
+    
+}
+
+.triangulus {
+    object-fit: cover;
+}

@@ -8,71 +8,56 @@
   <title>CSS Navbar</title>
 
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
 
 </head>
 
 <body>
-  <nav>
-    <div class="nav_head">
-      <a href="./index.html" class="logo">Sprat</a>
+  <div class="container">
+    <nav class="nav_head">
+      <a href="./index.html" class="logo">mylogins.nft</a>
 
       <!-- the super btn is a hamburger menu center position -->
       <div class="dropdown">
-        <a href="#">News</a>
-        <a href="#">Tutorial</a>
-        <a href="#">Contact</a>
+        <img id="superBtn" class="dropbtn" src="assets/super-btn-90-2.png"/>
+        <div id="dropDown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="#">News</a>
+          <a href="article.html">Article</a>
+        </div>
       </div>
 
       <div class="menu">
-        <a href="index.html">Home</a>
         <a href="#">About</a>
-        <a href="#">Article</a>
-        <a href="#">Contact</a>
+        <a href="article.html">Article</a>
+        <a href="#">login</a>
       </div>
-    </div>
-  </nav>
-  <main>
-    <section class="articles">
-
-      <div class="article">
-        <div class="left">
-          <img src="#" alt="">
+    </nav>
+    <main>
+      <div class="single__header">
+        <div class="single__header-image">
+          <img class="triangulus" src="assets/bg-trefle.jpg" alt="triangulars">
         </div>
-        <div class="right">
-          <p class="date">Juillet, 24, 2020</p>
-          <h1>Paris - La ville des lumières, pourquoi ?</h1>
-          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate repellendus
-            dolor necessitatibus. Modi, quos! Explicabo voluptates vero ullam quis ipsum impedit illum numquam cum
-            quaerat animi? Ad, fugiat neque.</p>
-          <p class="auteur">limno</p>
+        <div class="single__header-container">
+          <h1 class="single__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <div class="author">
+            <span class="author__link">Gnazio kukkovich</span>
+            <span class="post-date">23/05/2021</span>
+          </div>
         </div>
       </div>
-
-
-      <div class="article">
-        <div class="left">
-          <img src="#" alt="">
-        </div>
-        <div class="right">
-          <p class="date">Juillet, 24, 2020</p>
-          <h1>Interview - Une ville nocture est elle si belle ?</h1>
-          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate repellendus
-            dolor necessitatibus. Modi, quos! Explicabo voluptates vero ullam quis ipsum impedit illum numquam cum
-            quaerat animi? Ad, fugiat neque.</p>
-          <p class="auteur">lyt</p>
-        </div>
+      
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://t.me/buildingwebsite3point0" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://github.com/luca-ros" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lucarosano/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-
-
-
-
-
-
-  </main>
-  <footer>
-    <p>Rosano Luca© 2022 NFT as Key</p>
-  </footer>
-  <script src="./main.js"></script>
+      <!-- <p class="p-footer">Rosano Luca© 2022 </p> -->
+    </footer>
+    <script src="./main.js"></script>
+  </div>
 </body>
 
 </html>

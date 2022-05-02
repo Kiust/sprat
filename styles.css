@@ -9,7 +9,7 @@
   --dark: #212121;
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --h2-font-family: "Merriweather", "Arial", sans-serif;
-  --p-article-fonts: "Nunito", sans-serif;
+  --p-article-fonts: "Poppins", "Arial", sans-serif;
 }
 
 body {
@@ -33,14 +33,6 @@ img {
   min-height: 100vh;
 }
 
-.nav_head {
-  max-width: 1280;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .logo {
   background: var(--gradient-text);
@@ -48,23 +40,39 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  /* resize text dimention based on vh */
+  /* font-size: 3.5vw; */
+
   margin-right: 10px;
-  font-size: 40px;
-  font-weight: 900;
+  /* font-size: 40px; */
+  font-weight: 500;
+  font-family: 'Merriweather', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 2px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
 /* --------------------------------- NAVBAR */
+.nav_head {
+  /* max-width: 1280; */
+  max-height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
 nav {
   background-color: var(--dark);
   padding: 16px 32px;
   border-bottom: 2px solid var(--primary);
 }
 
+
 .menu {
   justify-content: flex-end;
+  
 }
 
 .menu a {
@@ -78,7 +86,10 @@ nav {
 }
 /* --------------------------------- SUPER BUTTON */
 .dropdown {
-  display: flex;
+  /* display: flex; */
+  position: relative;
+  display: inline-block;
+
 }
 
 .dropbtn {
@@ -86,11 +97,6 @@ nav {
 }
 
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-}
 
 .dropdown-content {
   display: none;
@@ -114,12 +120,9 @@ nav {
 
 .dropdown-content a:hover {
   background-color: rgba(96, 89, 89, 0.963);
-
 }
 
 .show {display:block;}
-
-
 
 #superBtn {
   position: relative;
@@ -127,16 +130,13 @@ nav {
   bottom: -5vh;
 }
 
-
 /* --------------------------------- HIRO SECTION */
-.hero {
-  height: 30vh;
-  /* background-image: url(assets/bg-trefle.jpg); */
-}
 
 .hero-text {
   text-align: center;
   padding-top: 9vh;
+  max-width: 1300px;
+  margin: auto;
 
 }
 
@@ -151,11 +151,10 @@ h1 {
 }
 
 h2 {
-  background: var(--gradient-text);
-  background-clip: text;
-  font-size: 2rem;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ae67fa;
+  font-size: 1.8rem;
+  font-family: var(--h2-font-family);
+  text-indent: 5%;
 }
 
 p {
@@ -163,7 +162,8 @@ p {
   font-size: 1.3rem;
   color: #FCFAF6;
   word-spacing: 0.4rem;
-  padding: 1rem;
+  padding: 1em;
+  text-indent: 5%;
 }
 
 /* --------------------------------- HOME ARTICLE */
@@ -171,6 +171,7 @@ p {
 .home-article {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .img-article,
@@ -178,13 +179,8 @@ p {
   padding: 1.5rem;
 }
 
-.home-article figure {
-  display: flex;
-  width: 30%;
-}
-
 .text {
-  width: 70%;
+  width: 65%;
 }
 
 .home-article img {
@@ -195,6 +191,11 @@ p {
   max-width: 360px;
   min-width: 250px;
   padding: 20px;
+}
+
+.paragrafo {
+  position: relative;
+  
 }
 
 /* --------------------------------- Footer */
@@ -209,7 +210,7 @@ footer {
 
 main {
   padding-bottom: 2.5rem;
-  /* Footer margon top */
+  /* Footer margin top */
 }
 
 .socials {
@@ -232,15 +233,43 @@ main {
 .socials i {
   color: wheat;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
+/* --------------------------------- MEDIA */
+
+@media only screen and (max-width: 820px) {
+.menu :first-child {
+  display: none;
+}
+}
 @media only screen and (max-width: 600px) {
   .home-article {
-    flex-direction: column
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu :nth-child(2) {
+    display: none;
   }
 
   .image,
   .text {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 690px) {
+  .menu :nth-child(2) {
+    display: none;
+  }
+ 
+}
+
+@media only screen and (max-width: 412px) {
+  .menu {
+    display: none;
+  
+  }
+ 
 }
