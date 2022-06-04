@@ -5,30 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Navbar</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="article.css" />
-
+  <title>CSS Navbar</title>
 </head>
-
 <body>
   <div class="container">
     <nav class="nav_head">
       <a href="./index.html" class="logo">mylogins.nft</a>
-
       <!-- the super btn is a hamburger menu center position -->
       <div class="dropdown">
         <img id="superBtn" class="dropbtn" src="assets/super-btn-90-2.png"/>
         <div id="dropDown" class="dropdown-content">
-          <a href="index.html">Home</a>
           <a href="#">News</a>
-          <a href="article.html">Article</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
         </div>
       </div>
-
       <div class="menu">
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="article.html">Article</a>
         <a href="#">login</a>
       </div>
@@ -36,8 +31,8 @@
     <main>
       <div class="single__header">
         <div class="single__header-image">
-          <img class="triangulus" src="assets/bg-trefle.jpg" alt="triangulars">
-        </div>
+          <!-- <img class="triangulus" src="assets/bg-trefle.jpg" alt="triangulars">
+        </div> -->
         <div class="single__header-container">
           <h1 class="single__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
           <div class="author">
@@ -46,7 +41,6 @@
           </div>
         </div>
       </div>
-      
     </main>
     <footer>
       <div class="socials">
@@ -59,5 +53,4 @@
     <script src="./main.js"></script>
   </div>
 </body>
-
 </html>

@@ -5,7 +5,7 @@
 
 // /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 // function myFunction() {
-//   document.getElementById("dropDown").classList.toggle("show");
+//   document.getElementById("myModal").classList.toggle("show");
 // };
 
 // //Change image of the input
@@ -22,6 +22,8 @@
 const btn = document.getElementById("superBtn");
 btn.addEventListener("click", myFunction, false);
 
+const spanClose = document.getElementsByClassName("close");
+
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 let toggle = false;
 function myFunction() {
@@ -32,4 +34,4 @@ function myFunction() {
     btn.src = "assets/super-btn-open-90.png";
   }
   toggle = !toggle;
-}
+};
